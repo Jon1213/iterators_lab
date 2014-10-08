@@ -43,7 +43,7 @@ var iterators = {
           // return func(arr[i], i, arr);
         // }
       }
-      return newArr;
+      return ret;
     },
     filter: function (arr, callback) {
       var newArr = [];
