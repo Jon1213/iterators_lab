@@ -13,15 +13,21 @@ Research the following term and summarize your findings on it two to three sente
 
 * `higher-order function`
 
+These are functions that can be handed a function and return an output, which can sometimes be another function. Map is a fine example of this.
+
 Pretending we implemented the following methods, update this README with a description of each of the following and an example you've created:
 
-* `max`
-* `min`
-* `each`
-* `map`
-* `filter`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-* `reduce`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
-* `reject`: [note](http://underscorejs.org/#reject)
+* `max` Takes an array and returns the maximum number. arr1 = [1,2,3]; arr1.max === 3;
+* `min` Takes an array and returns the minimum number. arr2 = [1,2,3]; arr2.min === 1;
+* `each` Takes an array and a function and performs the function on each item. each(arr1, consoleLog) === 
+1
+2
+3
+
+* `map` Maps a  given array to another array given an action function. map(arr1, addTwo) === [3,4,5]
+* `filter`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) Returns an array with array items that passed a functional comparison. filter(arr1, isOdd) === [1,3]
+* `reduce`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) Do this function thing to each array item in turn, leading to a single returned value. arr1.reduce(add) === 6
+* `reject`: [note](http://underscorejs.org/#reject)Opposite of filter. reject(arr1, isOdd) === [2]
 
 Use the notes provided to help guide you explanation.
 
